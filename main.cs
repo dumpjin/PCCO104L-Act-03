@@ -2,13 +2,17 @@ using System;
 
 class Program {
   public static void Main (string[] args) {
-    Console.WriteLine ("Enter something: ");
-    string input = "";
-    while (input ! = "exit")
-    {
-      input = Console.ReadLine();
-      Console.WriteLine("You entered: " + input);
-    }
     
+    string input;
+
+    do
+    {
+      Console.WriteLine ("Enter something: ");
+      input = Console.ReadLine();
+      Console.WriteLine(input);
+    }
+    while (input != "exit");
+    
+    Console.WriteLine ("Program Terminated.");
   }
 }
